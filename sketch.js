@@ -18,7 +18,7 @@ function preload() {
 
 function setup() {
   // put setup code here
-  createCanvas(1100,700);
+  createCanvas(1100,680);
   penguin = new Penguin(100, height/2);
   for(let i = 0; i < height/2; i++) {
   	waves[i] = new Wave();
