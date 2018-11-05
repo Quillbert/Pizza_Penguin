@@ -1,10 +1,10 @@
 class Penguin extends Collider {
 	constructor(x, y) {
-		super(120, 80);
+		super(105, 60);
 		this.x = x;
 		this.y = y;
 		this.xc = x-64;
-		this.yc = y-40;
+		this.yc = y-30;
 		this.velocity = 5;
 		this.score = 0;
 		this.cheat = false;
@@ -31,7 +31,7 @@ class Penguin extends Collider {
 		this.move();
 		this.drawPenguin(this.x, this.y);
 		this.xc = this.x-64;
-		this.yc = this.y-40;
-		//this.showHitBox();
+		this.yc = this.y-30;
+		this.showHitBox();
 	}
 }

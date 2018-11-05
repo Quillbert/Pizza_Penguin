@@ -1,11 +1,11 @@
 class Shark extends Collider {
 	constructor() {
-		super(155,70);
+		super(155,60);
 		this.x = random(width+600, width+1600);
 		this.y = random(height-100);
 		this.velocity = random(5,20);
 		this.xc = this.x+35;
-		this.yc = this.y+35;
+		this.yc = this.y+40;
 	}
 	move() {
 		this.x -= this.velocity;
@@ -36,8 +36,8 @@ class Shark extends Collider {
 		image(sharkPicture, this.x, this.y);
 		this.move();
 		this.xc = this.x+35;
-		this.yc = this.y+35;
-		//this.showHitBox();
+		this.yc = this.y+40;
+		this.showHitBox();
 		if(!penguin.cheat) {
 			this.collide();
 		}
