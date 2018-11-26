@@ -37,7 +37,7 @@ class Shark extends Collider {
 		this.move();
 		this.xc = this.x+35;
 		this.yc = this.y+40;
-		this.showHitBox();
+		//this.showHitBox();
 		if(!penguin.cheat) {
 			this.collide();
 		}
