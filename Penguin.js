@@ -32,6 +32,6 @@ class Penguin extends Collider {
 		this.drawPenguin(this.x, this.y);
 		this.xc = this.x-64;
 		this.yc = this.y-30;
-		this.showHitBox();
+		//this.showHitBox();
 	}
 }
